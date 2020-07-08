@@ -14,5 +14,9 @@ title = soup.title
 anch = soup.find_all('a')
 # print(anch)
 
-print(soup.find('p').get_text())
-print(soup.get_text())
+# print(soup.find('p').get_text())
+# print(soup.get_text())
+
+anch = soup.find_all('a')
+for link in anch:
+    print(link.get('href'))
