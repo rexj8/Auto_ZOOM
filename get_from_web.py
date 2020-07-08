@@ -6,5 +6,7 @@ htmlContent = r.content
 # print(htmlContent)
 
 soup = BeautifulSoup(htmlContent,'html.parser')
-print(soup.prettify)
+# print(soup.prettify)
 
+title = soup.title
+print(title.string)
